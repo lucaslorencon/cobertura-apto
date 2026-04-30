@@ -1,0 +1,1317 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cobertura à Venda em Campinas – 120m² com Área Gourmet | Condomínio Topázio Ville</title>
+  <meta name="description"
+    content="Cobertura duplex à venda em Campinas com 3 dormitórios, 1 suíte, churrasqueira, 120m² e lazer completo no Condomínio Topázio Ville. Agende sua visita pelo WhatsApp!" />
+  <meta property="og:title" content="Cobertura à Venda em Campinas – 120m²" />
+  <meta property="og:description" content="Conforto, lazer completo e localização privilegiada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    :root {
+      --white: #fff;
+      --off-white: #f8f7f5;
+      --light: #f0efec;
+      --border: #e5e3de;
+      --text-muted: #888580;
+      --text: #2a2825;
+      --text-dark: #1a1816;
+      --gold: #c9a96e;
+      --gold-light: #e8d5b0;
+      --green-wa: #25D366;
+      --green-wa-dark: #1ebe57;
+      --shadow-sm: 0 2px 12px rgba(0, 0, 0, .06);
+      --shadow-md: 0 8px 32px rgba(0, 0, 0, .1);
+      --transition: all .35s cubic-bezier(.25, .46, .45, .94)
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+      line-height: 1.6
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+      transition: var(--transition)
+    }
+
+    nav.scrolled {
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm)
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      transition: var(--transition)
+    }
+
+    nav.scrolled .nav-logo {
+      color: var(--text-dark)
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .6rem 1.4rem;
+      background: var(--green-wa);
+      color: #fff;
+      border-radius: 50px;
+      font-size: .85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition)
+    }
+
+    .nav-cta:hover {
+      background: var(--green-wa-dark);
+      transform: translateY(-1px)
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 8vh;
+      overflow: hidden;
+      background: var(--text-dark)
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .58;
+      display: block
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 13, 11, .93) 0%, rgba(15, 13, 11, .5) 40%, rgba(15, 13, 11, .2) 100%)
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      animation: fadeUp 1s ease both
+    }
+
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem
+    }
+
+    .hero-label::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--gold)
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5.5vw, 4rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.18;
+      margin-bottom: 1rem
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-light)
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      color: rgba(255, 255, 255, .72);
+      font-weight: 300;
+      max-width: 560px;
+      margin-bottom: 2.5rem;
+      line-height: 1.7
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center
+    }
+
+    .btn-wa-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: .75rem;
+      padding: 1rem 2.2rem;
+      background: var(--green-wa);
+      color: #fff;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      box-shadow: 0 4px 24px rgba(37, 211, 102, .35)
+    }
+
+    .btn-wa-hero:hover {
+      background: var(--green-wa-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(37, 211, 102, .4)
+    }
+
+    .hero-scroll {
+      color: rgba(255, 255, 255, .45);
+      font-size: .8rem;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      text-decoration: none
+    }
+
+    .hero-scroll::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 32px;
+      background: rgba(255, 255, 255, .3);
+      animation: scrollPulse 2s infinite
+    }
+
+    .hero-stats {
+      position: absolute;
+      right: clamp(1.5rem, 5vw, 4rem);
+      bottom: 8vh;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      animation: fadeLeft 1s .4s ease both
+    }
+
+    .hero-stat {
+      text-align: right;
+      border-right: 2px solid var(--gold);
+      padding-right: 1rem
+    }
+
+    .hero-stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1
+    }
+
+    .hero-stat-label {
+      font-size: .72rem;
+      color: rgba(255, 255, 255, .5);
+      letter-spacing: 1px;
+      text-transform: uppercase
+    }
+
+    section {
+      padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 5vw, 4rem)
+    }
+
+    .section-label {
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .75rem;
+      display: flex;
+      align-items: center;
+      gap: .75rem
+    }
+
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--gold)
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.25;
+      margin-bottom: 1rem
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 540px;
+      line-height: 1.7;
+      margin-bottom: 3rem
+    }
+
+    .max-w {
+      max-width: 1200px;
+      margin: 0 auto
+    }
+
+    #galeria {
+      background: var(--off-white)
+    }
+
+    .gallery-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem
+    }
+
+    .gallery-tabs {
+      display: flex;
+      gap: .4rem;
+      flex-wrap: wrap
+    }
+
+    .gallery-tab {
+      padding: .45rem 1.1rem;
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+      background: transparent
+    }
+
+    .gallery-tab.active,
+    .gallery-tab:hover {
+      background: var(--text-dark);
+      color: var(--white);
+      border-color: var(--text-dark)
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 10px
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 6px;
+      background: var(--light);
+      cursor: pointer;
+      position: relative;
+      min-height: 220px
+    }
+
+    .gallery-item:nth-child(1) {
+      grid-column: 1/8;
+      grid-row: 1/3;
+      min-height: 420px
+    }
+
+    .gallery-item:nth-child(2) {
+      grid-column: 8/13;
+      grid-row: 1
+    }
+
+    .gallery-item:nth-child(3) {
+      grid-column: 8/13;
+      grid-row: 2
+    }
+
+    .gallery-item:nth-child(4) {
+      grid-column: 1/5;
+      grid-row: 3
+    }
+
+    .gallery-item:nth-child(5) {
+      grid-column: 5/9;
+      grid-row: 3
+    }
+
+    .gallery-item:nth-child(6) {
+      grid-column: 9/13;
+      grid-row: 3
+    }
+
+    .gallery-item:nth-child(n+7) {
+      grid-column: span 4
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+      display: block;
+      transition: transform .6s cubic-bezier(.25, .46, .45, .94)
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.04)
+    }
+
+    .gallery-item-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0);
+      transition: var(--transition)
+    }
+
+    .gallery-item:hover .gallery-item-overlay {
+      background: rgba(0, 0, 0, .18)
+    }
+
+    .gallery-label-badge {
+      position: absolute;
+      bottom: .7rem;
+      left: .7rem;
+      background: rgba(0, 0, 0, .58);
+      color: #fff;
+      font-size: .7rem;
+      padding: .25rem .6rem;
+      border-radius: 3px;
+      letter-spacing: .5px
+    }
+
+    #destaques {
+      background: var(--white)
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem
+    }
+
+    .feature-card {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem 1.2rem;
+      text-align: center;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      transform: scaleX(0);
+      transition: var(--transition)
+    }
+
+    .feature-card:hover {
+      border-color: var(--gold-light);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md)
+    }
+
+    .feature-card:hover::before {
+      transform: scaleX(1)
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: .6rem;
+      display: block
+    }
+
+    .feature-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.2
+    }
+
+    .feature-label {
+      font-size: .78rem;
+      color: var(--text-muted);
+      margin-top: .2rem;
+      font-weight: 500
+    }
+
+    #descricao {
+      background: var(--text-dark)
+    }
+
+    .desc-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: center
+    }
+
+    .desc-body {
+      color: rgba(255, 255, 255, .68);
+      font-size: 1rem;
+      line-height: 1.85;
+      font-weight: 300
+    }
+
+    .desc-body p+p {
+      margin-top: 1rem
+    }
+
+    .desc-aside {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem
+    }
+
+    .desc-highlight {
+      background: rgba(201, 169, 110, .1);
+      border: 1px solid rgba(201, 169, 110, .25);
+      border-radius: 10px;
+      padding: 1.5rem
+    }
+
+    .desc-highlight-icon {
+      font-size: 1.5rem;
+      margin-bottom: .4rem
+    }
+
+    .desc-highlight-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin-bottom: .3rem
+    }
+
+    .desc-highlight-text {
+      font-size: .85rem;
+      color: rgba(255, 255, 255, .55);
+      line-height: 1.6
+    }
+
+    #financeiro {
+      background: var(--off-white)
+    }
+
+    .fin-cards {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 3rem
+    }
+
+    .fin-card {
+      flex: 1;
+      min-width: 200px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition)
+    }
+
+    .fin-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px)
+    }
+
+    .fin-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light))
+    }
+
+    .fin-card-icon {
+      font-size: 1.8rem;
+      margin-bottom: 1rem
+    }
+
+    .fin-card-label {
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: .5rem
+    }
+
+    .fin-card-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-dark)
+    }
+
+    .fin-card-sub {
+      font-size: .78rem;
+      color: var(--text-muted);
+      margin-top: .25rem
+    }
+
+    #localizacao {
+      background: var(--white);
+      padding-bottom: 0
+    }
+
+    .map-header {
+      margin-bottom: 2.5rem
+    }
+
+    .map-container {
+      border-radius: 12px 12px 0 0;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-bottom: none
+    }
+
+    .map-perks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-top: 1.5rem
+    }
+
+    .map-perk {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .82rem;
+      color: var(--text);
+      background: var(--off-white);
+      padding: .35rem .9rem;
+      border-radius: 50px;
+      border: 1px solid var(--border)
+    }
+
+    #contato {
+      background: linear-gradient(135deg, #1a1816 0%, #2d2826 100%);
+      text-align: center;
+      padding: clamp(5rem, 10vw, 9rem) clamp(1.5rem, 5vw, 4rem);
+      position: relative;
+      overflow: hidden
+    }
+
+    #contato::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(201, 169, 110, .08) 0%, transparent 70%);
+      pointer-events: none
+    }
+
+    .cta-label {
+      color: var(--gold);
+      justify-content: center
+    }
+
+    .cta-label::before {
+      display: none
+    }
+
+    .cta-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      color: var(--white);
+      margin-bottom: 1rem;
+      line-height: 1.2
+    }
+
+    .cta-sub {
+      color: rgba(255, 255, 255, .55);
+      font-size: 1rem;
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .btn-wa-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: .75rem;
+      padding: 1.1rem 2.8rem;
+      background: var(--green-wa);
+      color: #fff;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: var(--transition);
+      box-shadow: 0 6px 32px rgba(37, 211, 102, .4)
+    }
+
+    .btn-wa-cta:hover {
+      background: var(--green-wa-dark);
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 12px 48px rgba(37, 211, 102, .5)
+    }
+
+    .cta-trust {
+      margin-top: 2rem;
+      font-size: .8rem;
+      color: rgba(255, 255, 255, .3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem
+    }
+
+    footer {
+      background: #111009;
+      padding: 2rem clamp(1.5rem, 5vw, 4rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, .06)
+    }
+
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      color: rgba(255, 255, 255, .4);
+      font-size: .9rem
+    }
+
+    .footer-copy {
+      font-size: .75rem;
+      color: rgba(255, 255, 255, .2)
+    }
+
+    .wa-fixed {
+      position: fixed;
+      bottom: 1.75rem;
+      right: 1.75rem;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      background: var(--green-wa);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, .45);
+      text-decoration: none;
+      transition: var(--transition);
+      animation: pulse 3s infinite
+    }
+
+    .wa-fixed:hover {
+      transform: scale(1.1);
+      animation: none
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0, 0, 0, .93);
+      align-items: center;
+      justify-content: center;
+      padding: 2rem
+    }
+
+    .lightbox.open {
+      display: flex
+    }
+
+    .lightbox img {
+      max-width: 92vw;
+      max-height: 88vh;
+      object-fit: contain;
+      border-radius: 4px
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      color: #fff;
+      background: rgba(255, 255, 255, .1);
+      border: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition)
+    }
+
+    .lightbox-close:hover {
+      background: rgba(255, 255, 255, .2)
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, .12);
+      border: none;
+      color: #fff;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition)
+    }
+
+    .lightbox-nav:hover {
+      background: rgba(255, 255, 255, .22)
+    }
+
+    .lightbox-prev {
+      left: 1rem
+    }
+
+    .lightbox-next {
+      right: 1rem
+    }
+
+    .lightbox-counter {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255, 255, 255, .5);
+      font-size: .8rem
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes fadeLeft {
+      from {
+        opacity: 0;
+        transform: translateX(20px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0)
+      }
+    }
+
+    @keyframes scrollPulse {
+
+      0%,
+      100% {
+        opacity: .3
+      }
+
+      50% {
+        opacity: .8
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        box-shadow: 0 6px 24px rgba(37, 211, 102, .45)
+      }
+
+      50% {
+        box-shadow: 0 6px 36px rgba(37, 211, 102, .65), 0 0 0 8px rgba(37, 211, 102, .12)
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    @media(max-width:900px) {
+      .hero-stats {
+        display: none
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto
+      }
+
+      .gallery-item:nth-child(n) {
+        grid-column: span 1;
+        grid-row: span 1;
+        min-height: 200px
+      }
+
+      .gallery-item:nth-child(1) {
+        grid-column: 1/-1;
+        min-height: 280px
+      }
+
+      .desc-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem
+      }
+    }
+
+    @media(max-width:600px) {
+      .gallery-grid {
+        grid-template-columns: 1fr
+      }
+
+      .gallery-item:nth-child(n) {
+        grid-column: span 1
+      }
+
+      .nav-cta {
+        display: none
+      }
+
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .fin-cards {
+        flex-direction: column
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="main-nav">
+    <div class="nav-logo">Topázio Ville · Cobertura 502</div><a
+      href="https://api.whatsapp.com/send/?phone=5519996274817&text=Ol%C3%A1%2C+tudo+bem%3F+Vi+as+fotos+do+apartamanto+cobertura+502+do+bloco+7+no+site+e+tenho+interesse+em+visitar.&type=phone_number&app_absent=0"
+      target="_blank" rel="noopener" class="nav-cta"><svg width="16" height="16" viewBox="0 0 24 24"
+        fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg> Agendar Visita</a>
+  </nav>
+  <section class="hero" id="inicio">
+    <div class="hero-bg"><img src="img/cobertura-2.jpeg" alt="Cobertura Topázio Ville" loading="eager"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-label">Oportunidade Única · Campinas</div>
+      <h1>Cobertura à Venda em<br>Campinas – <em>120m²</em><br>com Área Gourmet</h1>
+      <p class="hero-sub">Conforto, lazer completo e localização privilegiada. Condomínio Topázio Ville, Bloco 7,
+        Cobertura 502.</p>
+      <div class="hero-actions"><a
+          href="https://api.whatsapp.com/send/?phone=5519996274817&text=Ol%C3%A1%2C+tudo+bem%3F+Vi+as+fotos+do+apartamanto+cobertura+502+do+bloco+7+no+site+e+tenho+interesse+em+visitar.&type=phone_number&app_absent=0"
+          target="_blank" rel="noopener" class="btn-wa-hero"><svg width="22" height="22" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg> Agendar Visita com o Proprietário</a><a href="#galeria" class="hero-scroll">Ver imóvel</a></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">120</div>
+        <div class="hero-stat-label">metros²</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">3</div>
+        <div class="hero-stat-label">Dormitórios</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">5º</div>
+        <div class="hero-stat-label">Andar</div>
+      </div>
+    </div>
+  </section>
+
+  </section>
+  <section id="destaques">
+    <div class="max-w">
+      <div class="reveal">
+        <div class="section-label">O Imóvel</div>
+        <h2 class="section-title">Destaques da Cobertura</h2>
+        <p class="section-subtitle">Tudo que você precisa para viver com conforto e sofisticação em um só lugar.</p>
+      </div>
+      <div class="features-grid reveal">
+        <div class="feature-card"><span class="feature-icon">🛏️</span>
+          <div class="feature-value">3</div>
+          <div class="feature-label">Dormitórios<br><small>(1 Suíte com armário)</small></div>
+        </div>
+        <div class="feature-card"><span class="feature-icon">🚿</span>
+          <div class="feature-value">3</div>
+          <div class="feature-label">Banheiros</div>
+        </div>
+        <div class="feature-card"><span class="feature-icon">📐</span>
+          <div class="feature-value">120m²</div>
+          <div class="feature-label">Área Total</div>
+        </div>
+        <div class="feature-card"><span class="feature-icon">🏢</span>
+          <div class="feature-value">5º</div>
+          <div class="feature-label">Andar (Cobertura)</div>
+        </div>
+        <div class="feature-card"><span class="feature-icon">🚗</span>
+          <div class="feature-value">1</div>
+          <div class="feature-label">Vaga de Garagem</div>
+        </div>
+        <div class="feature-card"><span class="feature-icon">🔥</span>
+          <div class="feature-value">Gourmet</div>
+          <div class="feature-label">Churrasqueira na Cobertura</div>
+        </div>
+        <div class="feature-card"><span class="feature-icon">🔒</span>
+          <div class="feature-value">24h</div>
+          <div class="feature-label">Portaria e Segurança</div>
+        </div>
+        <div class="feature-card"><span class="feature-icon">🏊</span>
+          <div class="feature-value">Lazer</div>
+          <div class="feature-label">Completo no Condomínio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <div class="max-w">
+      <div class="gallery-header reveal">
+        <div>
+          <div class="section-label">Imóvel</div>
+          <h2 class="section-title">Galeria de Fotos</h2>
+        </div>
+        <div class="gallery-tabs"><button class="gallery-tab active" data-cat="todos">Todos</button><button
+            class="gallery-tab" data-cat="sala">Sala</button><button class="gallery-tab"
+            data-cat="quartos">Quartos</button><button class="gallery-tab"
+            data-cat="banheiros">Banheiros</button><button class="gallery-tab"
+            data-cat="cozinha">Cozinha</button><button class="gallery-tab"
+            data-cat="cobertura">Cobertura</button><button class="gallery-tab" data-cat="condominio">Condomínio</button>
+        </div>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item" data-cat="cobertura"><img src="img/cobertura-1.jpeg" alt="Vista da Cobertura"
+            loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Vista da Cobertura</span>
+        </div>
+        <div class="gallery-item" data-cat="cobertura"><img src="img/cobertura-2.jpeg" alt="Cobertura" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Cobertura</span>
+        </div>
+        <div class="gallery-item" data-cat="cobertura"><img src="img/cobertura-3.jpeg" alt="Cobertura" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Cobertura</span>
+        </div>
+        <div class="gallery-item" data-cat="cobertura"><img src="img/cobertura-4.jpeg" alt="Cobertura" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Cobertura</span>
+        </div>
+        <div class="gallery-item" data-cat="cobertura"><img src="img/cobertura-5.jpeg" alt="Cobertura" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Cobertura</span>
+        </div>
+        <div class="gallery-item" data-cat="cobertura"><img src="img/cobertura-6.jpeg" alt="Cobertura" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Cobertura</span>
+        </div>
+        <div class="gallery-item" data-cat="cobertura"><img src="img/cobertura-7.jpeg" alt="Cobertura" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Cobertura</span>
+        </div>
+        <div class="gallery-item" data-cat="cobertura"><img src="img/cobertura-8.jpeg" alt="Cobertura" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Cobertura</span>
+        </div>
+        <div class="gallery-item" data-cat="sala"><img src="img/sala-1.jpeg" alt="Sala de Estar" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Sala de Estar</span>
+        </div>
+        <div class="gallery-item" data-cat="sala"><img src="img/sala-1.jpeg" alt="Sala" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Sala</span>
+        </div>
+        <div class="gallery-item" data-cat="sala"><img src="img/sala-3.jpeg" alt="Sala de TV" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Sala de TV</span>
+        </div>
+        <div class="gallery-item" data-cat="sala"><img src="img/sala-1.jpeg" alt="Sala" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Sala</span>
+        </div>
+        <div class="gallery-item" data-cat="quartos"><img src="img/Quarto Suite.jpeg" alt="Suíte Master"
+            loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Suíte Master</span>
+        </div>
+        <div class="gallery-item" data-cat="quartos"><img src="img/Quarto Suite-1.jpeg" alt="Suíte" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Suíte</span>
+        </div>
+        <div class="gallery-item" data-cat="quartos"><img src="img/Quarto Suite-2.jpeg" alt="Suíte" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Suíte</span>
+        </div>
+        <div class="gallery-item" data-cat="quartos"><img src="img/Quarto Suite-3.jpeg" alt="Suíte" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Suíte</span>
+        </div>
+        <div class="gallery-item" data-cat="quartos"><img src="img/Quarto Suite-4.jpeg" alt="Suíte" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Suíte</span>
+        </div>
+        <div class="gallery-item" data-cat="banheiros"><img src="img/banheiro-suite-1.jpeg" alt="Banheiro da Suíte"
+            loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Banheiro da Suíte</span>
+        </div>
+        <div class="gallery-item" data-cat="banheiros"><img src="img/banheiro-suite-2.jpeg" alt="Banheiro" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Banheiro</span>
+        </div>
+        <div class="gallery-item" data-cat="cozinha"><img src="img/cozinha.jpeg" alt="Cozinha" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Cozinha</span>
+        </div>
+        <div class="gallery-item" data-cat="cozinha"><img src="img/cobertura-1.jpeg" alt="Cozinha" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Cozinha</span>
+        </div>
+        <div class="gallery-item" data-cat="cozinha"><img src="img/cobertura-2.jpeg" alt="Cozinha" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Cozinha</span>
+        </div>
+        <div class="gallery-item" data-cat="cozinha"><img src="img/cobertura-3.jpeg" alt="Balcão" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Balcão</span>
+        </div>
+        <div class="gallery-item" data-cat="condominio"><img src="img/frente condominio.jpg" alt="Frente do Condomínio"
+            loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Frente do Condomínio</span>
+        </div>
+        <div class="gallery-item" data-cat="condominio"><img src="img/piscina.jpg" alt="Piscina" loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Piscina</span>
+        </div>
+        
+        <div class="gallery-item" data-cat="condominio"><img src="img/churrasqueira.jpg" alt="Churrasqueira do condomínio"
+            loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Churrasqueira do condomínio</span>
+        </div>
+        <div class="gallery-item" data-cat="condominio"><img src="img/quadra.jpg" alt="Quadra Esportiva"
+            loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Quadra Esportiva</span>
+        </div>
+        <div class="gallery-item" data-cat="condominio"><img src="img/jogos.jpg" alt="Salão de Jogos"
+            loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Salão de Jogos</span>
+        </div>
+        <div class="gallery-item" data-cat="condominio"><img src="img/frente condominio2.jpg" alt="Condomínio"
+            loading="lazy">
+          <div class="gallery-item-overlay"></div><span class="gallery-label-badge">Condomínio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="descricao">
+    <div class="max-w">
+      <div class="desc-layout">
+        <div class="desc-text reveal">
+          <div class="section-label" style="color:var(--gold)">Descrição</div>
+          <h2 class="section-title" style="color:var(--white)">Viva o melhor<br><em
+              style="font-style:italic;color:var(--gold-light)">de Campinas</em></h2>
+          <div class="desc-body">
+            <p>O imóvel conta com 3 dormitórios, sendo 1 suíte com armário, 3 banheiros, sala de estar e sala de TV,
+              cobertura com churrasqueira, lavanderia na parte superior e 1 vaga de garagem.</p>
+            <p>O condomínio oferece lazer completo, com piscinas adulto e infantil, academia, brinquedoteca, quadra
+              esportiva, salão de festas, salão de jogos, espaço kids e espaço pet.</p>
+            <p>A localização conta com fácil acesso às principais avenidas de Campinas, como a Av. Baden Powell e a
+              Rodovia Anhanguera. Nas proximidades, há supermercados, Shopping Parque Prado, farmácias, escolas,
+              padarias, academias, postos de combustível, restaurantes e comércios variados.</p>
+          </div>
+        </div>
+        <div class="desc-aside reveal">
+          <div class="desc-highlight">
+            <div class="desc-highlight-icon">🏊</div>
+            <div class="desc-highlight-title">Lazer Completo</div>
+            <div class="desc-highlight-text">Piscinas adulto e infantil, academia, brinquedoteca, quadra esportiva,
+              salão de festas, jogos, espaço kids e pet.</div>
+          </div>
+          <div class="desc-highlight">
+            <div class="desc-highlight-icon">📍</div>
+            <div class="desc-highlight-title">Localização Privilegiada</div>
+            <div class="desc-highlight-text">Acesso fácil à Av. Baden Powell e Rod. Anhanguera. Shopping Parque Prado,
+              supermercados e serviços a poucos minutos.</div>
+          </div>
+          <div class="desc-highlight">
+            <div class="desc-highlight-icon">🔥</div>
+            <div class="desc-highlight-title">Cobertura Exclusiva</div>
+            <div class="desc-highlight-text">Área gourmet com churrasqueira e lavanderia privativa na parte superior. Um
+              espaço único de entretenimento.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="financeiro">
+    <div class="max-w">
+      <div class="reveal">
+        <div class="section-label">Valores</div>
+        <h2 class="section-title">Informações Financeiras</h2>
+        <p class="section-subtitle">Taxas mensais do imóvel para planejamento da sua compra.</p>
+      </div>
+      <div class="fin-cards reveal">
+        <div class="fin-card">
+          <div class="fin-card-icon">💰</div>
+          <div class="fin-card-label">IPTU</div>
+          <div class="fin-card-value">R$ 130</div>
+          <div class="fin-card-sub">por mês</div>
+        </div>
+        <div class="fin-card">
+          <div class="fin-card-icon">🏢</div>
+          <div class="fin-card-label">Condomínio</div>
+          <div class="fin-card-value">R$ 630</div>
+          <div class="fin-card-sub">por mês</div>
+        </div>
+        <div class="fin-card"
+          style="background:linear-gradient(135deg,#1a1816,#2d2826);border-color:rgba(201,169,110,.3)">
+          <div class="fin-card-icon">💬</div>
+          <div class="fin-card-label" style="color:rgba(255,255,255,.5)">Valor de Venda</div>
+          <div class="fin-card-value" style="color:#fff;font-size:1.8rem">R$ 580 mil</div>
+          <div style="margin-top:.75rem"><a
+              href="https://api.whatsapp.com/send/?phone=5519996274817&text=Ol%C3%A1%2C+tudo+bem%3F+Vi+as+fotos+do+apartamanto+cobertura+502+do+bloco+7+no+site+e+tenho+interesse+em+visitar.&type=phone_number&app_absent=0"
+              target="_blank" rel="noopener"
+              style="color:var(--green-wa);font-weight:600;text-decoration:none;font-size:.9rem">→ Fale com o
+              Proprietário</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="localizacao">
+    <div class="max-w">
+      <div class="map-header reveal">
+        <div class="section-label">Localização</div>
+        <h2 class="section-title">Onde Fica o Imóvel</h2>
+        <p class="section-subtitle">Condomínio Residencial Topázio Ville, Campinas – SP.</p>
+        <div class="map-perks"><span class="map-perk">🛒 Supermercados próximos</span><span class="map-perk">🛍️
+            Shopping Parque Prado</span><span class="map-perk">🏫 Escolas na região</span><span class="map-perk">🛣️
+            Acesso à Anhanguera</span><span class="map-perk">🏋️ Academias</span><span class="map-perk">🍽️
+            Restaurantes</span></div>
+      </div>
+      <div class="map-container reveal"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.532528438672!2d-47.05964632491114!3d-22.930607079238285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8ced4e6d7d07d%3A0x53134b18b51c85f0!2sCondom%C3%ADnio%20Residencial%20Top%C3%A1zio%20Ville!5e0!3m2!1spt-BR!2sbr!4v1777494984609!5m2!1spt-BR!2sbr"
+          width="100%" height="420" style="border:0" allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </section>
+  <section id="contato">
+    <div class="max-w" style="position:relative;z-index:1">
+      <div class="reveal">
+        <div class="section-label cta-label">Agende Agora</div>
+        <h2 class="cta-title">Gostou do imóvel?<br>Agende sua visita agora mesmo!</h2>
+        <p class="cta-sub">Fale com o proprietário e garanta um horário para conhecer pessoalmente essa cobertura
+          exclusiva.</p><a
+          href="https://api.whatsapp.com/send/?phone=5519996274817&text=Ol%C3%A1%2C+tudo+bem%3F+Vi+as+fotos+do+apartamanto+cobertura+502+do+bloco+7+no+site+e+tenho+interesse+em+visitar.&type=phone_number&app_absent=0"
+          target="_blank" rel="noopener" class="btn-wa-cta"><svg width="24" height="24" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>Falar no WhatsApp</a>
+        <div class="cta-trust"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>Resposta rápida · Sem compromisso · Visita agendada em minutos com o Proprietário</div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-brand">Topázio Ville · Cobertura 502 · Bloco 7</div>
+    <div class="footer-copy">© 2025 · Campinas, SP · Todos os direitos reservados</div>
+  </footer><a
+    href="https://api.whatsapp.com/send/?phone=5519996274817&text=Ol%C3%A1%2C+tudo+bem%3F+Vi+as+fotos+do+apartamanto+cobertura+502+do+bloco+7+no+site+e+tenho+interesse+em+visitar.&type=phone_number&app_absent=0"
+    target="_blank" rel="noopener" class="wa-fixed" title="Falar no WhatsApp" aria-label="Contato WhatsApp"><svg
+      width="28" height="28" viewBox="0 0 24 24" fill="white">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg></a>
+  <div class="lightbox" id="lightbox"><button class="lightbox-close" onclick="closeLightbox()">✕</button><button
+      class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)">&#8249;</button><button
+      class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)">&#8250;</button><img id="lightbox-img" src=""
+      alt="">
+    <div class="lightbox-counter" id="lightbox-counter"></div>
+  </div>
+  <script>
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+    const revObs = new IntersectionObserver((entries) => { entries.forEach((e, i) => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); revObs.unobserve(e.target) } }) }, { threshold: .08, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+    const tabs = document.querySelectorAll('.gallery-tab'), items = document.querySelectorAll('.gallery-item');
+    tabs.forEach(tab => { tab.addEventListener('click', () => { tabs.forEach(t => t.classList.remove('active')); tab.classList.add('active'); const cat = tab.dataset.cat; items.forEach(item => { item.style.display = (cat === 'todos' || item.dataset.cat === cat) ? '' : 'none' }) }) });
+    let currentImgs = [], currentIdx = 0;
+    function openLightbox(src, all, idx) { currentImgs = all; currentIdx = idx; document.getElementById('lightbox-img').src = src; document.getElementById('lightbox-counter').textContent = (idx + 1) + ' / ' + all.length; document.getElementById('lightbox').classList.add('open'); document.body.style.overflow = 'hidden' }
+    function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow = '' }
+    function navigateLightbox(dir) { currentIdx = (currentIdx + dir + currentImgs.length) % currentImgs.length; document.getElementById('lightbox-img').src = currentImgs[currentIdx]; document.getElementById('lightbox-counter').textContent = (currentIdx + 1) + ' / ' + currentImgs.length }
+    document.getElementById('lightbox').addEventListener('click', e => { if (e.target === e.currentTarget) closeLightbox() });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); if (e.key === 'ArrowRight') navigateLightbox(1); if (e.key === 'ArrowLeft') navigateLightbox(-1) });
+    const gImgs = [...document.querySelectorAll('.gallery-item img')], srcs = gImgs.map(i => i.src);
+    gImgs.forEach((img, idx) => { img.style.cursor = 'zoom-in'; img.parentElement.addEventListener('click', () => openLightbox(srcs[idx], srcs, idx)) });
+  </script>
+</body>
+
+</html>
